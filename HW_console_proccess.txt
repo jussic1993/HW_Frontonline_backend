@@ -1,0 +1,63 @@
+PS C:\Users\Admin> py
+Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> dict_homework = {
+...     "key1":{
+...         "d":44,
+...         "f":None,
+...         "s":{
+...             8:44,
+...             9:None,
+...             10:{"mm":["s", "GET ME", 7]},
+...         },
+...     },
+...     "key2":{
+...         "fff1":44,
+...         "f":None,
+...     },
+... }
+>>> dict_homework
+{'key1': {'d': 44, 'f': None, 's': {8: 44, 9: None, 10: {'mm': ['s', 'GET ME', 7]}}}, 'key2': {'fff1': 44, 'f': None}}
+>>> a = dict_homework
+>>> a
+{'key1': {'d': 44, 'f': None, 's': {8: 44, 9: None, 10: {'mm': ['s', 'GET ME', 7]}}}, 'key2': {'fff1': 44, 'f': None}}
+>>> a['key1']
+{'d': 44, 'f': None, 's': {8: 44, 9: None, 10: {'mm': ['s', 'GET ME', 7]}}}
+>>> a['key1'].len
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'dict' object has no attribute 'len'
+>>> ?
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name '?' is not defined
+>>> len(a['key1']
+... len(a['key1'])
+  File "<stdin>", line 1
+    len(a['key1']
+        ^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> len(a['key1'])
+3
+>>> a['key1'][3]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 3
+>>> a['key1'][s]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 's' is not defined
+>>> a['key1']['s']
+{8: 44, 9: None, 10: {'mm': ['s', 'GET ME', 7]}}
+>>> a['key1']['s'][10]
+{'mm': ['s', 'GET ME', 7]}
+>>> a1 = a['key1']['s'][10]
+>>> a1
+{'mm': ['s', 'GET ME', 7]}
+>>> a1['mm']
+['s', 'GET ME', 7]
+>>> a1['mm'][2]
+7
+>>> a1['mm'][1]
+'GET ME'
+>>>
